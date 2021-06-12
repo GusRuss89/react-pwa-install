@@ -1,19 +1,18 @@
 import React from "react";
-import { SvgIcon } from "@material-ui/core";
 
 export function IOSShareIcon() {
   return (
-    <SvgIcon viewBox="0 0 50 50">
+    <svg viewBox="0 0 50 50">
       <path d="M30.3 13.7L25 8.4l-5.3 5.3-1.4-1.4L25 5.6l6.7 6.7z" />
       <path d="M24 7h2v21h-2z" />
       <path d="M35 40H15c-1.7 0-3-1.3-3-3V19c0-1.7 1.3-3 3-3h7v2h-7c-.6 0-1 .4-1 1v18c0 .6.4 1 1 1h20c.6 0 1-.4 1-1V19c0-.6-.4-1-1-1h-7v-2h7c1.7 0 3 1.3 3 3v18c0 1.7-1.3 3-3 3z" />
-    </SvgIcon>
+    </svg>
   );
 }
 
 export function FireFoxA2HSIcon() {
   return (
-    <SvgIcon viewBox="0 0 700.000000 700.000000">
+    <svg viewBox="0 0 700.000000 700.000000">
       <g transform="translate(0.000000,700.000000) scale(0.100000,-0.100000)">
         <path
           d="M3341 6328 c-29 -8 -266 -235 -614 -585 -4 -5 -149 -150 -323 -323
@@ -46,13 +45,13 @@ l-1205 3 -28 23 c-15 12 -42 32 -60 45 -21 14 -47 51 -74 103 l-41 82 1 1202
 -3 16 -25 50 -49 76 -42 46 -44 47 -101 47 -41 0 -69 -6 -91 -20z"
         ></path>
       </g>
-    </SvgIcon>
+    </svg>
   );
 }
 
 export function MenuIcon() {
   return (
-    <SvgIcon viewBox="0 0 24 24">
+    <svg viewBox="0 0 24 24">
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"
@@ -60,13 +59,13 @@ export function MenuIcon() {
         fill="context-fill"
         fill-opacity=".8"
       ></path>
-    </SvgIcon>
+    </svg>
   );
 }
 
 export function OperaA2HSIcon() {
   return (
-    <SvgIcon viewBox="0 0 24 24">
+    <svg viewBox="0 0 24 24">
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"
@@ -74,6 +73,6 @@ export function OperaA2HSIcon() {
         fill="context-fill"
         fill-opacity=".8"
       ></path>
-    </SvgIcon>
+    </svg>
   );
 }

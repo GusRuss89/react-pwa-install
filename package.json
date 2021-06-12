@@ -27,7 +27,6 @@
     "react": "16.x"
   },
   "devDependencies": {
-    "@material-ui/core": "^4.9.12",
     "nwb": "0.24.x",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

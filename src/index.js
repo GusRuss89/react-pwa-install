@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect, createContext, useContext } from "react";
 import { platforms, getPlatform } from "./Platforms";
-import InstallDialog from "./InstallDialog";
+
+export { platforms, getPlatform } from './Platforms';
+export 
 
 const ReactPWAInstallContext = createContext(Promise.reject);
 
@@ -8,7 +10,8 @@ export const useReactPWAInstall = () => useContext(ReactPWAInstallContext);
 
 const platform = getPlatform();
 
-export const ReactPWAInstallProvider = ({ children, enableLogging }) => {
+export const ReactPWAInstallProvider = ({ children, enableLogging, dialogComponent }) => {
+  const InstallDialog = dialogComponent
   const awaitingPromiseRef = useRef();
   const deferredprompt = useRef(null);
   const [dialogState, setDialogState] = useState(null);

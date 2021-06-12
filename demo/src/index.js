@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-
+import InstallDialog from './InstallDialog'
 import ReactPWAInstallProvider, { useReactPWAInstall } from "../../src";
 
 export default function Demo() {
@@ -42,7 +42,7 @@ export default function Demo() {
 }
 
 render(
-  <ReactPWAInstallProvider>
+  <ReactPWAInstallProvider dialogComponent={InstallDialog}>
     <Demo />
   </ReactPWAInstallProvider>,
   document.querySelector("#demo")

@@ -5,6 +5,10 @@
 
 Install handling for your React [PWA].
 
+## This is a fork of react-pwa-install
+
+I forked this so that I could remove the Material UI dependency and invert the control of the Install Dialog. In this version, you pass the Install Dialog as a prop `dialogComponent` to the provider.
+
 ## The problem this package is trying to solve
 
 Since intalling a PWA (aka [Add to home screen]) is handled differently by different browsers, it's rather hard to give this option to users conveniently. Currently only Chrome, Edge and Samsung Internet support this feature natively using the [BeforeInstallPromptEvent]. On iOS devices, FireFox mobile or Opera mobile the user needs to perform some manual steps to install the app to the home screen. Very few know this option even exists.
