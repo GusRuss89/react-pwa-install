@@ -6,7 +6,8 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 import React, { useState, useRef, useEffect, createContext, useContext } from "react";
 import { platforms, getPlatform } from "./Platforms";
 export { platforms, getPlatform } from './Platforms';
-export var ReactPWAInstallContext = createContext(Promise.reject);
+export * from './Icons';
+var ReactPWAInstallContext = createContext(Promise.reject);
 export var useReactPWAInstall = function useReactPWAInstall() {
   return useContext(ReactPWAInstallContext);
 };

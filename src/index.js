@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect, createContext, useContext } from "r
 import { platforms, getPlatform } from "./Platforms";
 
 export { platforms, getPlatform } from './Platforms';
-export 
+export * from './Icons'
 
 const ReactPWAInstallContext = createContext(Promise.reject);
 
