@@ -8,9 +8,8 @@ const ReactPWAInstallContext = createContext(Promise.reject);
 
 export const useReactPWAInstall = () => useContext(ReactPWAInstallContext);
 
-const platform = getPlatform();
-
 export const ReactPWAInstallProvider = ({ children, enableLogging, dialogComponent }) => {
+  const platform = typeof window === 'undefined' ? '' : getPlatform();
   const InstallDialog = dialogComponent
   const awaitingPromiseRef = useRef();
   const deferredprompt = useRef(null);

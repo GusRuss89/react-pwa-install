@@ -11,11 +11,11 @@ var ReactPWAInstallContext = createContext(Promise.reject);
 export var useReactPWAInstall = function useReactPWAInstall() {
   return useContext(ReactPWAInstallContext);
 };
-var platform = getPlatform();
 export var ReactPWAInstallProvider = function ReactPWAInstallProvider(_ref) {
   var children = _ref.children,
       enableLogging = _ref.enableLogging,
       dialogComponent = _ref.dialogComponent;
+  var platform = typeof window === 'undefined' ? '' : getPlatform();
   var InstallDialog = dialogComponent;
   var awaitingPromiseRef = useRef();
   var deferredprompt = useRef(null);
@@ -140,7 +140,7 @@ export var ReactPWAInstallProvider = function ReactPWAInstallProvider(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119,
+      lineNumber: 118,
       columnNumber: 7
     }
   }), /*#__PURE__*/React.createElement(InstallDialog, _extends({
@@ -152,7 +152,7 @@ export var ReactPWAInstallProvider = function ReactPWAInstallProvider(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121,
+      lineNumber: 120,
       columnNumber: 7
     }
   })));
